@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+.slider_section,
+.slider-container,
+.slider_active,
+.slider_inactive,
+.slider_pic,
+.slider_container,
+.slider_text,
+.slider_h2,
+.slider_h3,
+.slider_button,
+.slider_button_h2,
+.dots,
+.dot_active,
+.dot_default,
+.arrows,
+.left_arrow,
+.right_arrow
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+
+.slider_section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container {
+    grid-template-columns: repeat(5,1fr);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider_active {
+    width: 100vw;
+    height: 100vh;
+    top: 35vh;
+
+}
+
+.slider_inactive{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slider_pic{
+    width: 100vw;
+    height: 100vh;
+}
+
+.slider_container{
+    grid-template-rows: repeat(2,1fr);
+    width: 75vw;
+    height: 50vh;
+    bottom: 70vh;
+    border-radius: 5vh;
+}
+
+.slider_text{
+    width: 75vw;
+    height: 24vh;
+}
+
+.slider_h2{
+    width: 75vw;
+    height: 10vh;
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255,255,255,0.8);
+}
+
+.slider_h3{
+    width: 75vw;
+    height: 10vh;
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255,255,255,0.8);
+}
+
+.slider_button{
+    width: 10vw;
+    height: 5vh;
+    background-color:  rgba(255,255,255,0.8);
+    cursor: pointer;
+    border: none;
+    border-radius: 5vh;
+    transition: all 0.5s linear;
+}
+
+.slider_button:hover{
+    background-color:  rgba(0,0,0,0.6);
+    transition: all 0.5s linear;
+}
+
+.slider_button:active{
+    background-color:  #ffa500;
+    transition: all 0.25s linear;
+}
+
+.slider_button_h2{
+    width: 10vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.8);
+    transition: all 0.5s linear;
+}
+
+.arrows{
+    grid-template-columns: repeat(2,1fr);
+    width:100vw;
+    height: 10vh;
+    bottom: 50vh;
+}
+
+.left_arrow,
+.right_arrow {
+    position: absolute;
+    width: 5vw;
+    height: 8.7vh;
+    font-size: 3vh;
+    background-color: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 5vh;
+    transition: all 0.5s linear;
+}
+
+.left_arrow{ left: 5vw; }
+
+.right_arrow{ right: 5vw; }
+
+.left_arrow:hover,
+.right_arrow:hover{
+    background-color: rgba(255,255,255,0.6);
+    color: rgba(0,0,0,0.8);
+    transition: all 0.5s linear;
+}
+
+.left_arrow:active,
+.right_arrow:active{
+    color: #ffa500;
+    transition: all 0.1s linear;
+}
+
+.dots{
+    grid-template-columns: repeat(5,1fr);
+    width: 30vw;
+    height: 10vh;
+    bottom: 15vh;
+}
+
+.dot_active{
+    width: 2.5vw;
+    height: 4vh;
+    background-color: rgba(255,255,255,0.7);
+    color: #ffa500;
+    border:none;
+    border-radius: 5vh;
+    transition: all 0.25s linear;
+}
+
+.dot_default{
+    width: 2.5vw;
+    height: 4vh;
+    background-color: rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.8);
+    border:none;
+    border-radius: 5vh;
+    transition: all 0.5s linear;
+}
+
+.dot_default:hover{
+    background-color: rgba(255,255,255,0.7);
+    color: rgba(0,0,0,0.8);
+    transition: all 0.5s linear;
+}
